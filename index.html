@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="estilos/mediaQueries.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -26,26 +24,20 @@
                     ambiente.
                 </p>
                 <form action="login.php" method="post">
-                    <p class="email">
+                    <div class="email">
                         <label for="email">
                             <i class="material-symbols-outlined">person</i>
                         </label>
-                        <input type="email" name="email" id="email" pattern="[a-z]+([1-9]+)?@[a-z]+.com"
-                            placeholder="Seu email">
-                    </p>
-                    <p class="senha">
+                        <input type="email" name="email" id="email" placeholder="Seu email" required maxlength="30">
+                    </div>
+                    <div class="senha">
                         <label for="senha">
-                            <i class="material-symbols-outlined">vpn_key</i>
+                            <i class="material-symbols-outlined">key</i>
                         </label>
-                        <input type="password" name="senha" id="senha" minlength="8" maxlength="16"
-                            placeholder="Sua senha">
-                    </p>
-                    <p class="submit">
-                        <input type="submit" value="Entrar">
-                    </p>
-                    <p>
-                        <button>Esqueci a senha</button>
-                    </p>
+                        <input type="password" name="senha" id="senha" minlength="8" placeholder="Sua senha" required>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.php">Esqueci a senha</a>
                 </form>
             </div>
         </section>
