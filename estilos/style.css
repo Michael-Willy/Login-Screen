@@ -70,8 +70,13 @@ form > div.campo {
     margin: 5px 0px;
 }
 
-form i.material-symbols-outlined {
+div.campo i{
     color: white;
+    transform: translateY(5px);
+}
+
+form input[type=email], form input[type=password] {
+    width: 70%;
 }
 
 form > input[type=submit] {
